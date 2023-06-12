@@ -3,7 +3,7 @@ const router = express.Router()
 const Transfer = require('../models/transfer')
 
 // Get all transfers
-router.get('/api/transfers', async (req, res) => {
+router.get('/transfers', async (req, res) => {
     try {
       // Retrieve all transfers from the database
       const transfers = await Transfer.find();
@@ -18,7 +18,7 @@ router.get('/api/transfers', async (req, res) => {
   });
 
 // Get transfer details
-router.get('/api/transfers/:transferId', async (req, res) => {
+router.get('/transfers/:transferId', async (req, res) => {
     try {
       const transferId = req.params.transferId;
   
@@ -41,7 +41,7 @@ router.get('/api/transfers/:transferId', async (req, res) => {
 
 
 // Create and post a transfer
-router.post('/api/create-transfer', async (req, res) => {
+router.post('/create-transfer', async (req, res) => {
     try {
       // Extract the form data from the request body
       const { sender, senderBankDetails, beneficiary, amount } = req.body;

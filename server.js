@@ -24,7 +24,7 @@ mongoose.connect(process.env.DATABASE_URL, {
 app.use(express.json())
 
 const transfersRouter = require('./routes/transfers')
-app.use('/transfers', transfersRouter)
+app.use('/api', transfersRouter)
 
 app.listen(3000, () => {
   console.log(`Server is running on port 3000`);
