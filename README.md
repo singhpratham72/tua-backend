@@ -16,7 +16,7 @@ The Tua Backend API provides the following endpoints:
 
 To run the Tua Backend server locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/tua-backend.git`
+1. Clone the repository: `git clone [https://github.com/your-username/tua-backend.git](https://github.com/singhpratham72/tua-backend.git)`
 2. Change directory to the project: `cd tua-backend`
 3. Install dependencies: `npm install`
 4. Set up the environment variables:
